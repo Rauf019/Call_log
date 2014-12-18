@@ -1,1 +1,1 @@
-include ':app', ':swipeMenuListView'
+include ':app', ':swipeMenuListView', 'ShowcaseView:library'

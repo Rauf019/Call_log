@@ -7,18 +7,21 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.listview.Call_info;
+import com.listview.LetterImageView;
+
 import java.util.List;
 
 
-class Adapter extends ArrayAdapter<Call_info> {
+class List_Adapter extends ArrayAdapter<Call_info> {
 
 
     private final List<Call_info> list;
-    private DataBaseHelper dataBaseHelper;
 
-    public Adapter(Context context, List<Call_info> objects) {
+
+    public List_Adapter(Context context, List<Call_info> objects) {
         super(context, R.layout.custom_row, objects);
-        dataBaseHelper = new DataBaseHelper(getContext());
+
         list = objects;
     }
 
@@ -57,18 +60,18 @@ class Adapter extends ArrayAdapter<Call_info> {
             return rowView;
         }
     }
-
-
     public void updateList(List<Call_info> allContacts1) {
 
-        list.clear();
-        list.addAll(allContacts1);
-        this.notifyDataSetChanged();
-    }
 
+          list.clear();
+          list.addAll(allContacts1);
+          this.notifyDataSetChanged();
+
+    }
 
     class ViewHolder {
         TextView name;
         LetterImageView letterImageView;
     }
+
 }

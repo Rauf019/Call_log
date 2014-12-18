@@ -11,7 +11,8 @@
         android:id="@+id/spinner"
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
-        android:background="#ffcce0db" />
+        android:background="#ffcce0db"
+        style="@android:style/TextAppearance" />
 
     <com.listview.SwipeMenuListView
         android:id="@+id/swipe_list"

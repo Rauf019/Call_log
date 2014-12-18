@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -10,40 +10,47 @@
         android:id="@+id/mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
+        android:src="@android:drawable/ic_menu_report_image"
+        android:layout_margin="7dp"
+     />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+
+        android:layout_weight="1"
+        android:textColor="#ff000000"
+        android:layout_gravity="center"
+        android:autoText="false"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_gravity="center"
+        android:textColor="#ff000000"
+
+        android:layout_weight="1"
+        android:gravity="center" />
 
 
     <TextView
         android:id="@+id/duration"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Duration"
-        android:layout_gravity="top|center"
-        android:layout_below="@+id/time"
-        android:layout_alignLeft="@+id/time"
-        android:layout_alignStart="@+id/time" />
 
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time"
+        android:layout_gravity="center"
+        android:textColor="#ff000000"
 
 
-        android:layout_gravity="bottom|center"
-        android:layout_below="@+id/date"
-        android:layout_toRightOf="@+id/mode"
-        android:layout_toEndOf="@+id/mode" />
 
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Date"
-        android:layout_gravity="bottom|center"
+        android:layout_weight="1"
+        android:gravity="center" />
 
-        android:layout_toRightOf="@+id/mode"
-        android:layout_toEndOf="@+id/mode" />
-
-
-</RelativeLayout>
+</LinearLayout>

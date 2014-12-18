@@ -1,4 +1,4 @@
-package calllog.example.my_computer.calllog;
+package com.listview;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,6 +9,8 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 
 import java.util.Random;
+
+import calllog.example.my_computer.calllog.R;
 
 
 public class LetterImageView extends ImageView {
@@ -30,6 +32,12 @@ public class LetterImageView extends ImageView {
         mBackgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mBackgroundPaint.setStyle(Paint.Style.FILL);
         mBackgroundPaint.setColor(randomColor());
+
+    }
+
+    @Override
+    public boolean isInEditMode() {
+        return true;
     }
 
     public char getLetter() {

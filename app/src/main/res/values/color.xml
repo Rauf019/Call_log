@@ -12,6 +12,6 @@
     <color name="blue">#ff82e0ff</color>
     <color name="red">#fff10800</color>
     <color name="list_item_pressed">#1A000000</color>
-
+    <color name="text_color">#ff1d1d1d</color>
 
 </resources>

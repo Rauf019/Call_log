@@ -10,7 +10,9 @@
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fastScrollEnabled="true" />
+        android:fastScrollEnabled="true"
+        android:layoutMode="opticalBounds"
+        android:choiceMode="singleChoice" />
 
 
 </android.support.v4.widget.SwipeRefreshLayout>
